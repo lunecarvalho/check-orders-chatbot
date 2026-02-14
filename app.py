@@ -53,6 +53,11 @@ with gr.Blocks() as app:
   aguardando_numero_pedido = gr.State(False)
 
   def processar_entrada(input_usuario, historico, ids_historico_chat, aguardando_numero_pedido):
+    if historico is None:
+        historico = []
+        
+    historico.append({"role": "user", "content": input_usuario})
+      
     if aguardando_numero_pedido:
       resposta = verificar_status_pedido(input_usuario)
       aguardando_numero_pedido = False
@@ -61,7 +66,8 @@ with gr.Blocks() as app:
       if resposta == 'Please enter your order number: ':
         aguardando_numero_pedido = True
     
-    historico.append((input_usuario, resposta))
+    historico.append({"role": "assistant", "content": resposta})
+      
     return historico, ids_historico_chat, aguardando_numero_pedido, ""
 
   msg.submit(
