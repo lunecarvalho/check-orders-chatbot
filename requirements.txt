@@ -1,5 +1,4 @@
-transformers==4.39.3
-tokenizers==0.15.2
+transformers
+gradio
 torch
 pandas
-gradio
