@@ -29,3 +29,7 @@ A aplicação segue uma estrutura simples:
 - Transformers
 - Gradio 
 - Hugging Face Spaces
+
+______________________________
+
+Check out the application on Hugging Face: https://huggingface.co/spaces/lunecarvalho/check-orders-chatbot
