@@ -69,6 +69,6 @@ with gr.Blocks() as app:
       [msg, chatbot, estado, aguardando_numero_pedido],
       [chatbot, estado, aguardando_numero_pedido, msg]
   )
-  
-  if "__name"=="__main":  
+
+if "__name"=="__main":  
       app.launch(share=True)
