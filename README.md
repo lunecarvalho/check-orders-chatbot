@@ -17,9 +17,9 @@ A aplicação segue uma estrutura simples:
 
 1. Interface criada com Gradio.
 2. Função principal responsável por:
-  * Receber o número do pedido;
-  * Validar entrada;
-  * Retornar resposta baseada em regras.
+  - Receber o número do pedido;
+  - Validar entrada;
+  - Retornar resposta baseada em regras.
 3. Execução via servidor local ou deploy em Space.
 
 ## Tecnologias 
